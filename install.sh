@@ -12,11 +12,15 @@ exec 2>/tmp/dotfiles-install-stderr.log
 
 # === === === === ===
 # Make sure PowerShell is installed
-## Make the script executable
 sudo chmod a+x ./posix/require-pwsh.sh
-
-## Invoke with source command
 . ./posix/require-pwsh.sh
+
+
+# === === === === ===
+# Make sure Git is installed
+sudo chmod a+x ./posix/require-git.sh
+. ./posix/require-git.sh
+
 
 # === === === === ===
 # Restore stdout and stderr
